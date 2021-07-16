@@ -17,7 +17,7 @@ export default function MovieOverview() {
         }
     });
     if(movie===null) {
-       return <Redirect to="/" /> 
+       return <Redirect to="/the_popular_movie_review/" /> 
     }
     return (
         <Container>
