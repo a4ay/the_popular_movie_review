@@ -2,9 +2,11 @@ import React from 'react';
 import NavigationBar from "./components/NavigationBar";
 import Movies from "./components/Movies";
 import MovieOverview from "./components/MovieOverview";
-import  {BrowserRouter as Router,Switch, Route} from 'react-router-dom'
+import  {BrowserRouter as Router,Switch, Route, Redirect} from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
 
 function App() {
+  const movies = useSelector( state => (state.movies.movies));
   return (
     <div>
       <Router>
