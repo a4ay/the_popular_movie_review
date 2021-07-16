@@ -13,7 +13,7 @@ function App() {
           <Movies/>
         </Route>
         <Route path='/the_popular_movie_review/detail/:id'>
-          <MovieOverview/>
+          { (movies === null ? <Redirect to="/the_popular_movie_review/" /> : <MovieOverview/>) }
         </Route>
       </Router>
     </div>
