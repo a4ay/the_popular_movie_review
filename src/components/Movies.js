@@ -23,10 +23,10 @@ export default function Movies(){
             <MovieList>
                 {movies.map( movie => (
                     <MovieCard key={movie.id}>
-                        <Link to={"/detail/"+movie.id}>
+                        <Link to={"/the_popular_movie_review/detail/"+movie.id}>
                             <Poster src={imageUrl+movie.poster_path}></Poster>
                         </Link>
-                        <Link to={"/detail/"+movie.id}>
+                        <Link to={"/the_popular_movie_review/detail/"+movie.id}>
                             <Title>{(movie.title).toUpperCase()}</Title>
                         </Link>
                         <Details>

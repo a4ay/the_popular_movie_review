@@ -9,10 +9,10 @@ function App() {
     <div>
       <Router>
         <NavigationBar/>
-        <Route exact path='/'>
+        <Route exact path='/the_popular_movie_review/'>
           <Movies/>
         </Route>
-        <Route path='/detail/:id'>
+        <Route path='/the_popular_movie_review/detail/:id'>
           <MovieOverview/>
         </Route>
       </Router>
